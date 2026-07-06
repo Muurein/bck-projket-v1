@@ -1,0 +1,23 @@
+{
+  "name": "bck-mom4-v1",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.21.0",
+    "mongoose": "^8.19.0",
+    "nodemon": "^3.1.10",
+    "router": "^2.2.0"
+  }
+}
