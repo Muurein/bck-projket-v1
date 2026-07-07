@@ -1,0 +1,13 @@
+{
+  "category": "salad",
+  "name": "Cesar sallad",
+  "description": "sallad, kyckling, tomat, krutonger, sås",
+  "price": "85"
+}
+
+{
+  "category": "drink",
+  "name": "San Pelegrino",
+  "description": "citron, blodapelsin, neutral",
+  "price": "25"
+}

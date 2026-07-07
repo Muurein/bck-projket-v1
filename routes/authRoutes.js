@@ -5,7 +5,7 @@ const router = express.Router();
 
 //modeller
 const User = require("../models/User");
-const Menu= require("../models/Menu");
+const Menu= require("../models/Menu"); 
 
 //lägg till användare
 router.post("/register", async (req, res) => {

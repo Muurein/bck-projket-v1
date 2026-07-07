@@ -1,24 +1,29 @@
 const mongoose = require("mongoose");
-//kryptera lösen med bcrypt
 
 //user
 const menuSchema = new mongoose.Schema({
-    category: String,
-    name: String,
-    description: String,
-    price: Number
+    category: {
+        type: String,
+        required: [ true, "Du behöver fylla i kategori"],
+        trim: true
+    },
+    name: {
+        type: String,
+        required: [ true, "Du behöver fylla i namn"],
+        trim: true
+    },
+    description: {
+        type: String,
+        required: [ true, "Du behöver fylla i beskrivning"],
+        trim: true
+    },
+    price: {
+        type: Number,
+        required: [ true, "Du behöver fylla i nummer"],
+        min: 1
+    },
 });
 
 
-
-//lägg till sak i menyn
-
-
-//uppdatera sak i menyn
-
-
-//ta bort sak från menyn
-
-
-const Menu = mongoose.model("Menu", userSchema);
+const Menu = mongoose.model("Menu", menuSchema);
 module.exports = Menu;
