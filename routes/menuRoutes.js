@@ -71,7 +71,7 @@ router.delete("/deleteItem/:id", async (req, res) => {
         //hämta id och korresponderade item
         const { id } = req.params;
 
-        const deletedItem = await Menu.findByIdAndDelete(id, req.body, { new: true });
+        const deletedItem = await Menu.findByIdAndDelete(id);
 
         //validering
         if(!deletedItem) {
